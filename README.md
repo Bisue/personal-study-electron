@@ -108,7 +108,6 @@ npm init electron-app@latest my-new-app -- --template=vite
             <App></App >
         </React.StrictMode>
     );
-
     ```
 
     ```tsx
@@ -147,7 +146,6 @@ npm init electron-app@latest my-new-app -- --template=vite
             </div>
         )
     }
-
     ```
 
     ```tsx
@@ -163,7 +161,6 @@ npm init electron-app@latest my-new-app -- --template=vite
             </div>
         )
     }
-
     ```
 
     ```tsx
@@ -179,7 +176,6 @@ npm init electron-app@latest my-new-app -- --template=vite
             </div>
         )
     }
-
     ```
 
     ```tsx
@@ -204,5 +200,49 @@ npm init electron-app@latest my-new-app -- --template=vite
             </header >
         )
     }
+    ```
+#### 4. Prettier 구성
 
+1. `prettier`, `eslint-config-prettier` 설치
+
+    ```bash
+    npm install --save-dev prettier eslint-config-prettier
+    ```
+
+2. eslint 설정에 `eslint-config-prettier` 적용
+
+    ```json
+    // .eslintrc.json
+    {
+    "extends": [
+        // other configs..
+        "prettier" // 가장 마지막에 추가
+    ],
+    }
+    ```
+
+3. Prettier 설정(`.prettierrc`) 추가
+
+    Prettier 설정은 개인 취향에 맞게
+
+    ```json
+    // .prettierrc
+    {
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 160,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "arrowParens": "avoid"
+    }
+    ```
+
+4. `format` 스크립트 추가
+
+    ```json
+    {
+    "scripts": {
+        "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+    },
+    }
     ```
