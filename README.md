@@ -52,7 +52,8 @@ npm init electron-app@latest my-new-app -- --template=vite
 
 1. `tsconfig.json` compilerOptions.jsx 설정
 
-    ```json
+    ```jsonc
+    // tsconfig.json
     {
         "compilerOptions": {
             "jsx": "react-jsx",
@@ -211,13 +212,13 @@ npm init electron-app@latest my-new-app -- --template=vite
 
 2. eslint 설정에 `eslint-config-prettier` 적용
 
-    ```json
+    ```jsonc
     // .eslintrc.json
     {
-    "extends": [
-        // other configs..
-        "prettier" // 가장 마지막에 추가
-    ],
+        "extends": [
+            // other configs..
+            "prettier" // 가장 마지막에 추가
+        ],
     }
     ```
 
@@ -225,24 +226,25 @@ npm init electron-app@latest my-new-app -- --template=vite
 
     Prettier 설정은 개인 취향에 맞게
 
-    ```json
+    ```jsonc
     // .prettierrc
     {
-    "semi": true,
-    "singleQuote": true,
-    "printWidth": 160,
-    "tabWidth": 2,
-    "trailingComma": "es5",
-    "arrowParens": "avoid"
+        "semi": true,
+        "singleQuote": true,
+        "printWidth": 160,
+        "tabWidth": 2,
+        "trailingComma": "es5",
+        "arrowParens": "avoid"
     }
     ```
 
 4. `format` 스크립트 추가
 
-    ```json
+    ```jsonc
+    // package.json
     {
-    "scripts": {
-        "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
-    },
+        "scripts": {
+            "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+        },
     }
     ```
