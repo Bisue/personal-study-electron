@@ -1,8 +1,8 @@
 {
-  "name": "electron-forge",
-  "productName": "electron-forge",
-  "version": "1.0.0",
-  "description": "My Electron application description",
+  "name": "personal-study-electorn",
+  "productName": "personal-study-electorn",
+  "version": "0.0.1",
+  "description": "Let's study electron!",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
