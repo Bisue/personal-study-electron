@@ -2,6 +2,8 @@
 
 > 개인적으로 [Electron 공식문서](https://www.electronjs.org/docs), [Electron Forge 공식문서](https://www.electronforge.io/)를 참고하여 공부한 내용과 코드.
 
+&nbsp;
+
 ## 설치 및 실행
 
 ### Electron Forge 스크립트
@@ -19,6 +21,8 @@ npm run make # 앱 설치프로그램 생성 (배포용)
 npm run lint # eslint linting 실행
 npm run format # prettier 실행
 ```
+
+&nbsp;
 
 ## 내용 정리
 
