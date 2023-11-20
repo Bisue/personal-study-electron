@@ -28,3 +28,10 @@ npm run format # prettier 실행
 
 ### [프로젝트 설정 관련](./docs/project-setup.md)
 ### [Electron 프로세스 모델](./docs/electron-process-model.md)
+### 컨텍스트 격리(Context Isolation)
+- [공식 문서](https://www.electronjs.org/docs/latest/tutorial/context-isolation)
+### [IPC(Inter-Process Communication)](./docs/inter-process-communication.md)
+### 프로세스 샌드박싱(Process Sandboxing)
+- [공식 문서](https://www.electronjs.org/docs/latest/tutorial/sandbox)
+### 일렉트론에서의 MessagePort
+- [공식 문서](https://www.electronjs.org/docs/latest/tutorial/message-ports)
